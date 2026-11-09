@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>CipherX | Copy-Trading</title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="logo">⚡ CipherX</div>
+        <div class="slogan">Tu capital, sincronizado con la élite.</div>
+    </header>
+
+    <!-- PERFIL DE USUARIO -->
+    <div class="profile-card">
+        <img src="https://i.pravatar.cc/150?img=12" alt="Perfil" class="avatar" id="user-avatar">
+        <div class="user-info">
+            <h2 id="user-name">Cargando...</h2>
+            <div class="user-id" id="user-id" onclick="copiarID()">ID: Cargando...</div>
+            <div style="font-size: 10px; color: #A0ABB6; margin-top: 4px;">Toca para copiar tu ID</div>
+        </div>
+    </div>
+
+    <!-- TARJETA DE SALDOS -->
+    <div class="balance-card">
+        <div class="balance-box">
+            <div class="balance-title">Saldo Disponible</div>
+            <div class="balance-value">$0.00 <span style="font-size: 14px; color: #A0ABB6;">USDT</span></div>
+        </div>
+
+        <div class="frozen-box">
+            <div>
+                <div class="frozen-title">🔒 Bono de Bienvenida (Congelado)</div>
+                <div class="frozen-desc">Se desbloquea al alcanzar $X en depósitos.</div>
+            </div>
+            <div class="frozen-value">$50.00</div>
+        </div>
+    </div>
+
+    <!-- GRÁFICO -->
+    <div class="chart-card">
+        <div class="chart-header">
+            <div class="chart-title">Rendimiento del Copy-Trading</div>
+            <div class="chart-percent" id="daily-profit">+0.8%</div>
+        </div>
+        <div class="chart-container">
+            <div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div>
+            <div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div>
+        </div>
+        <div style="text-align: center; font-size: 11px; color: #A0ABB6; margin-top: 10px;">
+            Rendimiento diario: 0.4% - 1.2%
+        </div>
+    </div>
+
+    <!-- BOTONES -->
+    <div class="action-buttons">
+        <button class="btn btn-primary" onclick="alert('Ir a Depósito')">Depositar</button>
+        <button class="btn btn-secondary" onclick="alert('Ir a Retiro')">Retirar</button>
+    </div>
+
+    <!-- NAVEGACIÓN -->
+    <nav class="bottom-nav">
+        <div class="nav-item active"><span class="nav-icon">🏠</span><span>Inicio</span></div>
+        <div class="nav-item"><span class="nav-icon">📈</span><span>Mercado</span></div>
+        <div class="nav-item"><span class="nav-icon">💼</span><span>Billetera</span></div>
+        <div class="nav-item"><span class="nav-icon">👥</span><span>Equipo</span></div>
+        <div class="nav-item"><span class="nav-icon">👤</span><span>Referidos</span></div>
+    </nav>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
